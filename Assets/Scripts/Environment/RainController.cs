@@ -1,49 +1,50 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class RainController : MonoBehaviour
+namespace Environment
 {
-    [SerializeField] Light _dirLight;
-    private ParticleSystem _ps;
-    private bool _isRain = false;
-
-    private void Start()
+    public class RainController : MonoBehaviour
     {
-        _ps = GetComponent<ParticleSystem>();
-        _ps.Stop();
-        StartCoroutine(Weather());
-    }
+        [SerializeField] Light _dirLight;
+        private ParticleSystem _ps;
+        private bool _isRain = false;
 
-    private void Update()
-    {
-        if (_isRain && _dirLight.intensity > 0.3f)
+        private void Start()
         {
-            LightIntensity(-1);
+            _ps = GetComponent<ParticleSystem>();
+            _ps.Stop();
+            StartCoroutine(Weather());
         }
-        else if (!_isRain && _dirLight.intensity < 0.68f)
+
+        private void Update()
         {
-            LightIntensity(1);
+            if (_isRain && _dirLight.intensity > 0.3f)
+            {
+                LightIntensity(-1);
+            }
+            else if (!_isRain && _dirLight.intensity < 0.68f)
+            {
+                LightIntensity(1);
+            }
         }
-    }
 
-    private void LightIntensity(int i)
-    {
-        _dirLight.intensity += 0.1f * Time.deltaTime * i;
-    }
-
-    private IEnumerator Weather()
-    {
-        while (true)
+        private void LightIntensity(int i)
         {
-            yield return new WaitForSeconds(UnityEngine.Random.Range(30f, 60f));
-            if (_isRain)
-                _ps.Stop();
-            else
-                _ps.Play();
+            _dirLight.intensity += 0.1f * Time.deltaTime * i;
+        }
+
+        private IEnumerator Weather()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(UnityEngine.Random.Range(30f, 60f));
+                if (_isRain)
+                    _ps.Stop();
+                else
+                    _ps.Play();
          
-            _isRain = !_isRain;
+                _isRain = !_isRain;
+            }
         }
     }
 }
