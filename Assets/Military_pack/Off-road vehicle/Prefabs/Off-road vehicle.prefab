@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4008724276455571210}
   - component: {fileID: 2249522776298569943}
   - component: {fileID: 8009029040847728885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2736003732203104019}
   - component: {fileID: 8881164826486375368}
   - component: {fileID: 3708062938743216669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3322932497958783682}
   - component: {fileID: 3398481656775584513}
   - component: {fileID: 580822656779893935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5914169369335926699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 7697606255866220374}
   - component: {fileID: 1196070128507200673}
   - component: {fileID: 572976525619627552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: weapon_big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 5195593846249484585}
   - component: {fileID: 3360588792200966651}
   - component: {fileID: 8552803132139207486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: weapon_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +461,7 @@ GameObject:
   - component: {fileID: 7402477357536644708}
   - component: {fileID: 425714496354909948}
   - component: {fileID: 1260080855507807190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7574856985513561399}
-  m_Layer: 0
+  - component: {fileID: 6383243282596750112}
+  m_Layer: 8
   m_Name: Off-road vehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,6 +569,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6383243282596750112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085460630238156685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.67, y: 3.6, z: 6.47}
+  m_Center: {x: -0.02, y: 1.38, z: 0.12}
 --- !u!1 &7846259950683624633
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +593,7 @@ GameObject:
   - component: {fileID: 2803771889412495546}
   - component: {fileID: 698846985589310987}
   - component: {fileID: 5916311738887327668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Off_road_vehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
