@@ -52,6 +52,7 @@ namespace Environment
                 
                 transform.position = new Vector3(transform.position.x, -10, transform.position.z);
                 GetComponent<MoveHouseUp>().enabled = true;
+                gameObject.GetComponent<AutoCreateCar>().enabled = true;
                 Destroy(gameObject.GetComponent<PlaceObjects>());
             }
             if(Input.GetKey(KeyCode.LeftShift))
