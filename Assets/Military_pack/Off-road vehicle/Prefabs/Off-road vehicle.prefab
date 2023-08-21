@@ -641,9 +641,10 @@ GameObject:
   - component: {fileID: 7574856985513561399}
   - component: {fileID: 6383243282596750112}
   - component: {fileID: 8056579045914682249}
+  - component: {fileID: 7280321405713250611}
   m_Layer: 8
   m_Name: Off-road vehicle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,6 +704,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7280321405713250611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085460630238156685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1b28ae0c2859b449202a1a508feccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _radius: 70
 --- !u!1 &7846259950683624633
 GameObject:
   m_ObjectHideFlags: 0
