@@ -13,6 +13,7 @@ public class CarAttack : MonoBehaviour
     private void Update()
     {
         DetectCollision();
+        
     }
 
     private void DetectCollision()
