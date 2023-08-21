@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 321918871092448795}
   m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0.02, y: 2.5, z: -0.06704311}
-  m_LocalScale: {x: 1.6137403, y: 0.20418724, z: 0.24734}
+  m_LocalScale: {x: 1.5, y: 0.20418724, z: 0.24734}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574856985513561399}
@@ -379,7 +379,7 @@ Transform:
   - {fileID: 4008724276455571210}
   - {fileID: 7402477357536644708}
   m_Father: {fileID: 7574856985513561399}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3273980757991200636
 GameObject:
@@ -412,7 +412,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574856985513561399}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1196070128507200673
 MeshFilter:
@@ -495,7 +495,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574856985513561399}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3360588792200966651
 MeshFilter:
@@ -642,6 +642,7 @@ GameObject:
   - component: {fileID: 6383243282596750112}
   - component: {fileID: 8056579045914682249}
   - component: {fileID: 7280321405713250611}
+  - component: {fileID: -1662410545103569244}
   m_Layer: 8
   m_Name: Off-road vehicle
   m_TagString: Player
@@ -662,6 +663,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1906117346405814676}
+  - {fileID: 9218719547782434187}
   - {fileID: 2803771889412495546}
   - {fileID: 7697606255866220374}
   - {fileID: 5195593846249484585}
@@ -717,6 +719,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _radius: 70
+  _bullet: {fileID: 18790525552796693, guid: 33429a8c5e86bed46a087440a0952a67, type: 3}
+--- !u!54 &-1662410545103569244
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085460630238156685}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7846259950683624633
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574856985513561399}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &698846985589310987
 MeshFilter:
@@ -800,3 +819,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8608560649764541298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9218719547782434187}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9218719547782434187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8608560649764541298}
+  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.036, y: 2.119, z: 0.704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7574856985513561399}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
