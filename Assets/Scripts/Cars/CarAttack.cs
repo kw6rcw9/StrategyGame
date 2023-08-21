@@ -35,7 +35,10 @@ public class CarAttack : MonoBehaviour
                (gameObject.CompareTag("Enemy") && el.gameObject.CompareTag("Player")))
            {
                if (gameObject.CompareTag("Enemy"))
-                   GetComponent<NavMeshAgent>().SetDestination(el.transform.position);
+               { 
+                   GetComponent<NavMeshAgent>().speed = 10;   
+                GetComponent<NavMeshAgent>().SetDestination(el.transform.position);
+               }
                
                if(_coroutine == null)
                    _coroutine = StartCoroutine(StartAttack(el));
